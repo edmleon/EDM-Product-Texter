@@ -42,12 +42,7 @@
 
 - Mindestens **4 Bulletpoints**, maximal **6**  
 - Branchen & Umgebungen **immer** vertreten  
-- Bei Schuhen: Sicherheitsklasse + Normenhinweis zwingend  
-- Bei Schläuchen/Fittings: Kompatibilität zwingend  
-- Keine Punkte mit „etc.“ oder „diverse Anwendungen“  
-
----
-
+- Bei Schuhen: Sicherheitsklasse + Normenhinweis zwingend   
 ## 5) Beispiel-Template
 
 - {Branche/Industrie}  
