@@ -14,8 +14,7 @@
 
 **Kurzbeschreibung:** Siehe Regelwerk_Kurzbeschreibung.md
 
-**Technische Daten:** (neu, nach Kurzbeschreibung)
-8–12 Zeilen als <dl> oder Tabelle: Maß/Größe, Material, Schutzart/Norm (DIN/EN/IP), Leistung/Spannung/Druck, Temperatur, Anschluss/Thread, Gewicht, Gebinde/VE, Zertifikate, Artikel‑Nr. Unbekannt = „—“.
+**Technische Daten:** Siehe Regelwerk_Technische_Daten.md
 
 **Anwendungsbereiche:**
 4–6 Bulletpoints: Branchen, Anlagen/Umgebungen, kompatible Serien/Maschinen, Sicherheit/Normhinweise.
