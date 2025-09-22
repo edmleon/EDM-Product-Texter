@@ -1,6 +1,6 @@
 # Regelwerk_Kurzbeschreibung (P) – B2B-Industrieprodukte
 
-**Ziel:** Kurze, sachliche Beschreibungen für Produktdetailseiten (unterhalb der H2-Überschrift) als P-HTML Text. Fokus: prägnante Orientierung für den Leser + SEO-Sauberkeit. Keine Werbung, sondern klare Fakten zum Einsatzzweck, Material, Kompatibilität oder Verpackung.
+**Ziel:** Kurze, sachliche Beschreibungen für Produktdetailseiten (unterhalb der H2-Überschrift) als P-HTML Text. Fokus: prägnante Orientierung für den Leser + SEO-Sauberkeit. Keine Werbung, sondern klare Fakten zum Einsatzzweck, Material, Kompatibilität oder Verpackung. Bei Serien von Artikeln (bspw. Schlauch in Größe 10 und 12) soll der Text gleich sein mit geänderten Details.
 
 ---
 
@@ -43,6 +43,8 @@
 
 **Einheitliche Schreibweise:** Zahlen + geschütztes Leerzeichen + Einheit (400 g, 20 L).
 
+**Floskeln vermeiden:** Sachlich bleiben. Wörter wie verfügbar, hochwertig, beschaffung etc. vermeiden.
+
 **Außerdem:** Materialien immer nennen, wenn eindeutig. Keine Normen/Temperaturen/Druckangaben (stehen in Technischen Daten, nicht in Teaser).
 
 ## 4) Datenquellen & Validierung
@@ -84,10 +86,12 @@
     **Falsch:** „Schmierfett, Wälzlager, hochtemperaturbeständig, 400 g.“
 8. Sind Maßeinheiten korrekt mit geschütztem Leerzeichen gesetzt?
     (400 g, 20 L, 3/4″, 400 mm)
+9. Habe ich das Produkt sachlich und verständlich beschrieben oder hört es sich zu sehr nach Werbung an?
+10. Ist in der Beschreibung alles abgedeckt, was ein Kunde von einer Solchen erwartet?
 
-## 7) Beispiele
+## 7) Beispiele (nur lose an diesen orientieren in der Wortwahl)
 
 **Schlauch:** „Wasserschlauch für Gartenbau und Industrie, aus Gummi, schwarz, auf Rolle zu 40 m.“
-**Schuh:** „Sicherheitsschuh S3 für Bau & Handwerk, aus Leder mit BOA-Verschluss, in Größen 39–47 verfügbar.“
+**Schuh:** „Sicherheitsschuh S3 für Bau & Handwerk, aus Leder mit BOA-Verschluss, in Größen 39–47.“
 **Chemie:** „Schmierfett für Wälzlager und Führungen, hochtemperaturbeständig, geliefert in 400 g Kartusche.“
 **Fitting:** „Adapter für IBC-Container mit Kugelauslaufhahn, aus Kunststoff, kompatibel mit 3/4″-Anschlüssen.“
