@@ -9,7 +9,7 @@
 **Formel:** 
 `{Produkttyp/Funktion} für {Einsatzzweck/Medium}, {Material/Besonderheit}, {Verpackung/Variante}`
 
-**Länge:** Ziel: 140–160 Zeichen (optimiert für Google-Snippets). Minimum: 110 Zeichen, Maximum: 180 Zeichen. Keine Aufzählungen, sondern fließender Satzbau.
+**Länge:** Ziel: 3 -5 Sätze. Minimum: 200 Zeichen, Maximum: 1000 Zeichen. Keine Aufzählungen, sondern fließender Satzbau.
 
 ## 2) Muss-/Soll-Logik je Kategorie
 
