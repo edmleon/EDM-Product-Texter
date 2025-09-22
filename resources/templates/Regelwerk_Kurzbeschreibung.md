@@ -49,7 +49,7 @@
 
 ## 4) Datenquellen & Validierung
 
-**Vorgehen:** Zunächst nach Daten in manufacturer_data und product_data schauen. Dann Herstellerseiten durchsuchen. Nichts erfinden.
+**Vorgehen:** Herstellerseiten durchsuchen. Nichts erfinden. Wenn existent Daten in manufacturer_data und product_data auslesen.
 
 **Zulässig:** Herstellerangaben, interne DB, Händlertexte.
 

@@ -10,6 +10,9 @@ Scrapes data of products and creates texts with it.
     - product_data        | json and excel files containing product data
 
     - templates           | structure templates for the product texts
+        -example_texts    | finished example texts for orientation
+
+        -specific_rules   | product type or manufacturer specific rules
 
 - src                     | currently irrelevant, future expansion possibility
 
