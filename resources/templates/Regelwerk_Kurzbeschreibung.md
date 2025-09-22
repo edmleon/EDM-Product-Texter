@@ -39,7 +39,7 @@
 
 **Verb-Logik:** Beschreibend statt werbend: „geeignet für …“, „ausgelegt für …“, „zur Abdichtung von …“.
 
-**Satzbau:** Kurzer Fließtext, kein Telegrammstil.
+**Satzbau:** Kurzer Fließtext, kein Telegrammstil. Auf grammatikalische Korrektheit achten.
 
 **Einheitliche Schreibweise:** Zahlen + geschütztes Leerzeichen + Einheit (400 g, 20 L).
 
