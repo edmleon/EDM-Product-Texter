@@ -1,6 +1,6 @@
 # Regelwerk_Überschriften (H2) – B2B-Industrieprodukte
 
-**Ziel:** Einheitliche, SEO-saubere H2-Überschriften für Produktdetailseiten. Fokus: **Instandhalter** & **Einkäufer**. Keine Werbefloskeln, keine Behauptungen, klare technische Informationen.
+**Ziel:** Einheitliche, SEO-saubere H2-Überschriften für Produktdetailseiten. Fokus: **Instandhalter** & **Einkäufer**. Keine Werbefloskeln, keine Behauptungen, klare technische Informationen..
 
 ---
 
