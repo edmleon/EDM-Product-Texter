@@ -16,8 +16,7 @@
 
 **Technische Daten:** Siehe Regelwerk_Technische_Daten.md
 
-**Anwendungsbereiche:**
-4–6 Bulletpoints: Branchen, Anlagen/Umgebungen, kompatible Serien/Maschinen, Sicherheit/Normhinweise.
+**Anwendungsbereiche:** Siehe Regelwerk_Anwendungsbereiche.md
 
 **Vergleiche:** (nur gleicher Hersteller)
 Tabelle 3–5 Kriterien × 2–3 Alternativen (eigene Serien/Varianten): Größe/DN, Leistung/Spannung, Schutzart/Norm, Material, Preis/Verfügbarkeit. Quelle: related_ids/Filter.
