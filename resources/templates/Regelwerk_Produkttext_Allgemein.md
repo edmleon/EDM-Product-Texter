@@ -10,7 +10,7 @@
 
 **Überschrift:** Siehe Regelwerk_Überschriften.md
 
-**Inhaltsverzeichnis:** Auto‑Liste der Abschnitte unten, max. 6 Einträge; <ul><li><a href="#…">.
+**Inhaltsverzeichnis:** Auto‑Liste der Abschnitte unten, max. 6 Einträge
 
 **Kurzbeschreibung:** Siehe Regelwerk_Kurzbeschreibung.md
 
@@ -18,8 +18,22 @@
 
 **Anwendungsbereiche:** Siehe Regelwerk_Anwendungsbereiche.md
 
-**Vergleiche:** (nur gleicher Hersteller)
-Tabelle 3–5 Kriterien × 2–3 Alternativen (eigene Serien/Varianten): Größe/DN, Leistung/Spannung, Schutzart/Norm, Material, Preis/Verfügbarkeit. Quelle: related_ids/Filter.
+**Vergleiche:** Siehe Regelwerk_Vergleiche.md
 
-**FAQs:**
-5–7 Q&A, ≤ 40 Wörter/Antwort: Kompatibilität, Montage, Ersatzteile, Lieferzeit, Normen/Zulassung, Wartung, Rückgabe.
+**FAQs:** Siehe Regelwerk_FAQ.md
+
+# HTML Text
+
+<h2>Überschrift</h2>
+<h3>Inhaltsverzeichnis<h3>
+<ul><li>...</li><li>...</li><li>...</li></ul>
+<h3>Kurzbeschreibung<h3>
+<p>...</p>
+<h3>Technische Daten</h3>
+<ul><li>...</li><li>...</li><li>...</li></ul>
+<h3>Anwendungsbereiche</h3>
+<ul><li>...</li><li>...</li><li>...</li></ul>
+<h3>Vergleiche</h3>
+<table><tr><th>...</th><th>...</th><th>...</th></tr><tr><th>...</th><th>...</th><th>...</th></tr></table>
+<h3>FAQ<h3>
+<ul><li>...</li><li>...</li><li>...</li></ul>

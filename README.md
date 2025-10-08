@@ -1,26 +1,29 @@
 # EDM-Product-Texter
 Scrapes data of products and creates texts with it.
 
-# Structure
-- gui                     | currently irrelevant, future expansion possibility
+# Project Structure
 
-- resources               | resource files
-   - manufacturer_data    | json and excel files containing manufacturer data
+- gui | currently irrelevant, future expansion possibility |
 
-    - product_data        | json and excel files containing product data
+- resources               | resource files |
+   - manufacturer_data    | json and excel files containing manufacturer data |
 
-    - templates           | structure templates for the product texts
-        -example_texts    | finished example texts for orientation
+    - product_data        | json and excel files containing product data |
 
-        -specific_rules   | product type or manufacturer specific rules
+    - templates           | structure templates for the product texts |
+        - example_texts   | finished example texts for orientation |
 
-- src                     | currently irrelevant, future expansion possibility
+        - specific_rules  | product type or manufacturer specific rules |
 
-- styles                  | currently irrelevant, future expansion possibility
+- src                     | currently irrelevant, future expansion possibility |
 
-- .env                    | contains api keys
-- .gitignore              | ignored files in git
-- README.md               | this file
-- requirements.txt        | python requirements
+- styles                  | currently irrelevant, future expansion possibility |
+
+- .env                    | contains api keys |
+- | .gitignore              | ignored files in git |
+- | README.md               | this file |
+- | requirements.txt        | python requirements |
 
 # Product Text Structure 
+
+See Regelwerk_Produkttext_Allgemein.md.
