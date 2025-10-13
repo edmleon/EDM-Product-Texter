@@ -14,6 +14,7 @@ from src.utils.config import settings
 from src.utils.io import ensure_dir
 from src.pipelines.map_urls import main as map_main
 from src.pipelines.crawl_products import main as crawl_main
+from src.pipelines.match_products import main as match_main  # NEW
 
 
 def _read_manufacturers_from_json(json_path: Path) -> List[Dict[str, Any]]:
@@ -61,7 +62,7 @@ def _run_map_for_url(url: str, max_depth: int | None, out_filename: str | None):
 
 
 def main():
-    parser = argparse.ArgumentParser(prog="run_project", description="Firecrawl mapping & crawling launcher")
+    parser = argparse.ArgumentParser(prog="run_project", description="Firecrawl mapping, matching & crawling launcher")
     sub = parser.add_subparsers(dest="cmd", required=True)
 
     # MAP
@@ -74,6 +75,19 @@ def main():
     p_map.add_argument("--sitemap", choices=["include", "only", "exclude"], default="include",
                        help="Whether to include sitemap links (propagated to map_urls)")
     # (no --out-filename here; it comes from JSON rows)
+
+    # MATCH (NEW)
+    p_match = sub.add_parser("match", help="Match products to manufacturer URLs and emit matches.json/report")
+    p_match.add_argument("--manufacturers-json", default="resources/manufacturer_data/manufacturers.json")
+    p_match.add_argument("--products-csv", default="resources/product_data/50000_Artikel.csv")
+    p_match.add_argument("--out-matches", default="resources/matched_data/matches.json")
+    p_match.add_argument("--out-report", default="resources/matched_data/match_report.csv")
+    # CSV column names (override if your headers differ)
+    p_match.add_argument("--col-artikelnr", default="ArtikelNr")
+    p_match.add_argument("--col-name", default="Artikelbezeichnung")
+    p_match.add_argument("--col-lieferant", default="Lieferant")
+    p_match.add_argument("--col-hersteller", default="Hersteller")
+    p_match.add_argument("--min-score", type=float, default=40.0, help="Minimum score to accept a match")
 
     # CRAWL
     p_crawl = sub.add_parser("crawl", help="Crawl matched product URLs")
@@ -94,6 +108,22 @@ def main():
             # Single URL path (no custom filename)
             _run_map_for_url(inp, args.max_depth, None)
         return
+
+    if args.cmd == "match":
+        # Delegate to pipeline CLI (reuse its argparse & defaults)
+        sys.argv = [
+            "match_products.py",
+            "--manufacturers-json", args.manufacturers_json,
+            "--products-csv", args.products_csv,
+            "--out-matches", args.out_matches,
+            "--out-report", args.out_report,
+            "--col-artikelnr", args.col_artikelnr,
+            "--col-name", args.col_name,
+            "--col-lieferant", args.col_lieferant,
+            "--col-hersteller", args.col_hersteller,
+            "--min-score", str(args.min_score),
+        ]
+        return match_main()
 
     if args.cmd == "crawl":
         sys.argv = ["crawl_products.py", args.matches_json] + (["--extract", args.extract] if args.extract else [])

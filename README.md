@@ -42,13 +42,15 @@ Scrapes data of products and creates texts with it.
 - requirements.txt                      | python requirements |
 - run_project.py                        | root launcher (CLI) |
 
-# Crawling
+# Run Project
 
-To start crawling urls run
+For setup run
 
     pip install -r requirements.txt
 
-and then either
+to install all required python packages.
+
+To start crawling urls run either
 
     python run_project.py map resources/manufacturer_data/manufacturers.json --max-depth 3
 
@@ -58,9 +60,17 @@ for all manufacturers, or
 
 for a specific manufacturer site.
 
-To star crawling product data run
+To start crawling product data run
 
-    - tbd
+    python run_project.py crawl resources/product_data/matches.json --extract basic
+
+# Not Working Currently
+
+To start matching products to urls run
+
+    python run_project.py match --products-csv resources/product_data/*.csv
+
+with your designated product csv.
 
 # Product Text Structure 
 

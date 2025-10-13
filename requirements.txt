@@ -13,3 +13,4 @@ tqdm==4.66.4          # (optional) progress bars for large crawls
 
 # Additional
 firecrawl-py>=1.6.0
+rapidfuzz>=3.9.0
