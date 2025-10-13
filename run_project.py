@@ -14,7 +14,8 @@ from src.utils.config import settings
 from src.utils.io import ensure_dir
 from src.pipelines.map_urls import main as map_main
 from src.pipelines.crawl_products import main as crawl_main
-from src.pipelines.match_products import main as match_main  # NEW
+from src.pipelines.crawl_products_from_urls import main as crawl_list_main
+from src.pipelines.match_products import main as match_main
 
 
 def _read_manufacturers_from_json(json_path: Path) -> List[Dict[str, Any]]:
@@ -94,6 +95,13 @@ def main():
     p_crawl.add_argument("matches_json", help="Path to JSON mapping {artikelnr: url}")
     p_crawl.add_argument("--extract", default=None, help="Optional Firecrawl extract preset")
 
+    # CRAWL-LIST (NEW)
+    p_clist = sub.add_parser("crawl-list", help="Crawl directly from a mapped URLs file into <manufacturer>_data/")
+    p_clist.add_argument("urls_json", help="Path to mapped URLs JSON (e.g., resources/crawled_data/skf_urls.json)")
+    p_clist.add_argument("--manufacturer", help="Override output manufacturer folder name (default: derived from filename)")
+    p_clist.add_argument("--cap", type=int, default=5, help="Max number of URLs to process")
+    p_clist.add_argument("--extract", default=None, help="Optional Firecrawl extract preset")
+
     args, extra = parser.parse_known_args()
     ensure_dir(settings.out_dir)
 
@@ -128,6 +136,17 @@ def main():
     if args.cmd == "crawl":
         sys.argv = ["crawl_products.py", args.matches_json] + (["--extract", args.extract] if args.extract else [])
         return crawl_main()
+    
+    if args.cmd == "crawl-list":
+        # Delegate to pipeline CLI so we reuse its logic
+        sys.argv = ["crawl_from_list.py", args.urls_json]
+        if args.manufacturer:
+            sys.argv += ["--manufacturer", args.manufacturer]
+        if args.cap is not None:
+            sys.argv += ["--cap", str(args.cap)]
+        if args.extract:
+            sys.argv += ["--extract", args.extract]
+        return crawl_list_main()
 
 if __name__ == "__main__":
     main()

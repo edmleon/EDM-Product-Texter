@@ -1,19 +1,24 @@
 # EDM-Product-Texter
+
 Scrapes data of products and creates texts with it.
 
-# Project Structure
+## Project Structure
 
-- gui | currently irrelevant, future expansion possibility |
+- gui                                   | currently irrelevant, future expansion possibility |
 
 - resources                             | resource files |
-   - manufacturer_data                  | json and excel files containing manufacturer data |
-    - manufacturers.json                | contains the urls to the manufacturer sites |
-
-    - product_data                      | json and excel files containing product data |
-
     - crawled_data                      | data aqquired through scraping |
         - manufacturer url_urls.json    | contains all scraped urls of a manufacturer site |
         - artikelnr_data.json           | contains the scraped data of a product |
+
+    - manufacturer_data                 | json and excel files containing manufacturer data |
+        - manufacturers.json            | contains the urls to the manufacturer sites |
+
+    - matched_data                      | |
+        - match_report.csv              | |
+        - matches.json                  | |
+
+    - product_data                      | json and excel files containing product data |
 
     - templates                         | structure templates for the product texts |
         - example_texts                 | finished example texts for orientation |
@@ -21,15 +26,21 @@ Scrapes data of products and creates texts with it.
         - specific_rules                | product type or manufacturer specific rules |
 
 - src                                   | python code |
-    - firecrawl_client                  | |
+    - firecrawl_client                  | connection to the firecrawl api for webscraping |
         - __init__.py                   | empty __init__ files so 'src' is a package |
         - client.py                     | minimal Firecrawl API client (map + crawl) |
+
+    - matching                          | |
+        - __init__.py                   | |
+        - manufacturer_index.py         | |
+        - matchers.py                   | |
+        - normalizers.py                | |
     
-    - pipelines                         | |
+    - pipelines                         | workflow |
         - crawl_products.py             | CLI: matches → <artikelnr>_data.json |
         - map_urls.py                   | CLI: manufacturer → <manufacturer>_urls.json |
 
-    - utils                             | |
+    - utils                             | utilities, e.g. loading settings and variables |
         - __init__.py                   | empty __init__ files so 'src' is a package |
         - config.py                     | loads .env, defaults |
         - io.py                         | file IO helpers |
@@ -42,7 +53,13 @@ Scrapes data of products and creates texts with it.
 - requirements.txt                      | python requirements |
 - run_project.py                        | root launcher (CLI) |
 
-# Run Project
+## Run Project
+
+In the following:
+
+- max-depth means the amount of redirects the crawler goes.
+
+- cap is the amount of urls crawled at one time.
 
 For setup run
 
@@ -60,11 +77,17 @@ for all manufacturers, or
 
 for a specific manufacturer site.
 
-To start crawling product data run
+To start crawling product data run either
+
+    python run_project.py crawl-list resources/crawled_data/*.json --cap 5 --extract basic
+
+for data directly from the crawled urls without matching, or
 
     python run_project.py crawl resources/product_data/matches.json --extract basic
 
-# Not Working Currently
+for data matched to EDM productnumber (matching doesnt really work yet though).
+
+## Not Working Currently
 
 To start matching products to urls run
 
@@ -72,6 +95,6 @@ To start matching products to urls run
 
 with your designated product csv.
 
-# Product Text Structure 
+## Product Text Structure
 
 See Regelwerk_Produkttext_Allgemein.md.

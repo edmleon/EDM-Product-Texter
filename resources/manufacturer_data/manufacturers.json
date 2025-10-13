@@ -23,6 +23,7 @@
         {
             "name": "Example Manufacturer",
             "database_supplier_name": "",
+            "database_manufacturer_name": "",
             "url": "https://www.example.com/products",
             "crawled_data_file": "example_urls.json"
         },
