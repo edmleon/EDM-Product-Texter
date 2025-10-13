@@ -1,13 +1,6 @@
 {
     "manufacturers": [
         {
-            "name": "SKF",
-            "database_supplier_name": "",
-            "database_manufacturer_name": "SKF",
-            "url": "https://www.skf.com/de/products",
-            "crawled_data_file": "skf_urls.json"
-        },
-        {
             "name": "Schaeffler",
             "database_supplier_name": "",
             "database_manufacturer_name": "SKF",
@@ -20,6 +13,13 @@
         "Ensure the URLs are accessible and contain product information."
     ],
     "other_manufacturers": [
+        {
+            "name": "SKF",
+            "database_supplier_name": "",
+            "database_manufacturer_name": "SKF",
+            "url": "https://www.skf.com/de/products",
+            "crawled_data_file": "skf_urls.json"
+        },
         {
             "name": "Example Manufacturer",
             "database_supplier_name": "",
@@ -36,10 +36,227 @@
         },
         {
             "name": "Tecnamic",
-            "database_supplier_name": "",
-            "database_manufacturer_name": "",
+            "database_supplier_name": "Tecnamic GmbH",
+            "database_manufacturer_name": "Strongbelt",
             "url": "https://www.tecnamic.com/produkte/",
             "crawled_data_file": "tecnamic_urls.json"
+        },
+                {
+            "name": "",
+            "database_supplier_name": "KLOTZtechnics GmbH & Co. KG",
+            "database_manufacturer_name": "",
+            "url": "https://klotztechnics.eu/index.php",
+            "crawled_data_file": "klotztechnics_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "TEGUMA GMBH",
+            "database_manufacturer_name": "",
+            "url": "https://www.teguma.com/produkte/",
+            "crawled_data_file": "teguma_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Dietrich Wollert GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://dietrich-wollert.de/schlaeuche/",
+            "crawled_data_file": "dietrich_wollert_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Industriebedarf Castan GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://www.industriebedarf-castan.de/produkte-liste/",
+            "crawled_data_file": "industriebedarf_castan_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Grüner>jetzt durch APD vertreten !",
+            "database_manufacturer_name": "",
+            "url": "https://www.apd-schlauchtechnik.de/produkte/",
+            "crawled_data_file": "apd_schlauchtechnik_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "RALA GmbH & Co. KG",
+            "database_manufacturer_name": "",
+            "url": "https://www.rala.de/de/produkte.html",
+            "crawled_data_file": "rala_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Carl Geisen",
+            "database_manufacturer_name": "",
+            "url": "https://geisen.de/produkte/",
+            "crawled_data_file": "geisen_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "APS",
+            "database_manufacturer_name": "",
+            "url": "https://www.aps-industrietechnik.de/produkte",
+            "crawled_data_file": "aps_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "SEMPERIT",
+            "database_manufacturer_name": "",
+            "url": "https://www.semperitgroup.com/de/produkte/",
+            "crawled_data_file": "semperit_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "HÜCOBI",
+            "database_manufacturer_name": "",
+            "url": "https://de.huecobi.de/shop-produkte",
+            "crawled_data_file": "huecobi_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Emil Simon GmbH & Co. KG",
+            "database_manufacturer_name": "",
+            "url": "https://www.gummifabrik-simon.de/de/simon-produkte/oel-und-benzinschlaeuche/oel.php?navid=561865561865",
+            "crawled_data_file": "emil_simon_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Grüning & Loske GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://gruelo.de/produkte/",
+            "crawled_data_file": "gruelo_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "HST",
+            "database_manufacturer_name": "",
+            "url": "https://hst.de/produkte/",
+            "crawled_data_file": "hst_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "ERIKS Deutschland GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://eriks.de/de/produkte/",
+            "crawled_data_file": "eriks_deutschland_gmbh_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Landefeld Druckluft und",
+            "database_manufacturer_name": "",
+            "url": "https://www.landefeld.de/de",
+            "crawled_data_file": "landefeld_druckluft_und_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Siebert Hydraulik & Pneumatik",
+            "database_manufacturer_name": "",
+            "url": "https://www.siebert-hydraulik.de/leistungen/",
+            "crawled_data_file": "siebert_hydraulik_und_pneumatik_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "AL Elastomer Extrusion GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://al-extrusion.de/produkte/",
+            "crawled_data_file": "al_elastomer_extrusion_gmbh_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "H. Riesbeck",
+            "database_manufacturer_name": "",
+            "url": "https://wp2025.riesbeck.com/#home",
+            "crawled_data_file": "h_riesbeck_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "RBI Sandstrahltechnik GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://www.rbi-strahltechnik.de/produkte",
+            "crawled_data_file": "rbi_sandstrahltechnik_gmbh_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Walter Gondrom GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://www.gondrom.com/katalog.php",
+            "crawled_data_file": "walter_gondrom_gmbh_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Hilgendorf GmbH & Co.",
+            "database_manufacturer_name": "",
+            "url": "https://www.hilgendorf.net/de/",
+            "crawled_data_file": "hilgendorf_gmbh_und_co_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Walter Flender",
+            "database_manufacturer_name": "",
+            "url": "https://walther-flender.de/",
+            "crawled_data_file": "walter_flender_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "TECNO PLAST",
+            "database_manufacturer_name": "",
+            "url": "https://tecnoplast.de/",
+            "crawled_data_file": "tecno_plast_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Trost Fahrzeugteile",
+            "database_manufacturer_name": "",
+            "url": "https://shop.wm.de/de",
+            "crawled_data_file": "trost_fahrzeugteile_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "ECON Werkstattausrüstungs GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://eshop.econ-wa.de/",
+            "crawled_data_file": "econ_werkstattausruestungs_gmbh_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "APD Schlauchtechnik GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://www.apd-schlauchtechnik.de/produkte/",
+            "crawled_data_file": "apd_schlauchtechnik_gmbh_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "GAPI",
+            "database_manufacturer_name": "",
+            "url": "https://www.gapi.de/produkte",
+            "crawled_data_file": "gapi_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "Karl Späh GmbH & Co KG",
+            "database_manufacturer_name": "",
+            "url": "https://www.spaeh.de/produkte-services/produkte/",
+            "crawled_data_file": "karl_spaeh_gmbh_und_co_kg_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "EBA Pneumatic GmbH",
+            "database_manufacturer_name": "",
+            "url": "https://www.eba-pneumatic.de/de/pneumatik-produkte.html",
+            "crawled_data_file": "eba_pneumatic_gmbh_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "FESTO AG & Co. KG",
+            "database_manufacturer_name": "",
+            "url": "https://www.festo.com/de/de/",
+            "crawled_data_file": "festo_ag_und_co_kg_urls.json"
+        },
+        {
+            "name": "",
+            "database_supplier_name": "KVS Produktionsgesellschaft UG",
+            "database_manufacturer_name": "",
+            "url": "https://kvs-gmbh.com/produkte/",
+            "crawled_data_file": "kvs_produktionsgesellschaft_ug_urls.json"
         }
     ]
 }
