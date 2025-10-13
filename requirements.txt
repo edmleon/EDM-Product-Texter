@@ -1,0 +1,15 @@
+# Core HTTP + Retry
+requests==2.32.3
+urllib3==2.2.3
+
+# Environment and configuration
+python-dotenv==1.0.1
+
+# Type hints & dataclasses (included in Python 3.10+, but safe for completeness)
+typing-extensions==4.12.2
+
+# Optional utilities
+tqdm==4.66.4          # (optional) progress bars for large crawls
+
+# Additional
+firecrawl-py>=1.6.0

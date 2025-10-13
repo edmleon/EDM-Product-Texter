@@ -1,0 +1,10 @@
+{
+    "manufacturers": [
+        "https://www.klueber.com/de/de/produkte-service/schmierstoffe/"
+    ],
+    "comments": [
+        "Add manufacturer URLs here. Each URL should point to a page listing products from that manufacturer.",
+        "Ensure the URLs are accessible and contain product information.",
+        "https://www.tecnamic.com/produkte/"
+    ]
+}

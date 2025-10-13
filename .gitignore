@@ -116,7 +116,6 @@ dmypy.json
 poetry.lock
 Pipfile
 Pipfile.lock
-requirements.txt
 
 # ------------------------------------------------------------------------------
 # Local secrets
