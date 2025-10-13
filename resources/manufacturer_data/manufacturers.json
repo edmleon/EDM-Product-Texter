@@ -1,10 +1,44 @@
 {
     "manufacturers": [
-        "https://www.klueber.com/de/de/produkte-service/schmierstoffe/"
+        {
+            "name": "SKF",
+            "database_supplier_name": "",
+            "database_manufacturer_name": "SKF",
+            "url": "https://www.skf.com/de/products",
+            "crawled_data_file": "skf_urls.json"
+        },
+        {
+            "name": "Schaeffler",
+            "database_supplier_name": "",
+            "database_manufacturer_name": "SKF",
+            "url": "https://medias.schaeffler.de/de/all-products",
+            "crawled_data_file": "schaeffler_urls.json"
+        }
     ],
     "comments": [
         "Add manufacturer URLs here. Each URL should point to a page listing products from that manufacturer.",
-        "Ensure the URLs are accessible and contain product information.",
-        "https://www.tecnamic.com/produkte/"
+        "Ensure the URLs are accessible and contain product information."
+    ],
+    "other_manufacturers": [
+        {
+            "name": "Example Manufacturer",
+            "database_supplier_name": "",
+            "url": "https://www.example.com/products",
+            "crawled_data_file": "example_urls.json"
+        },
+        {
+            "name": "Klüber",
+            "database_supplier_name": "Klüber Lubrication",
+            "database_manufacturer_name": "Klüber Lubrication",
+            "url": "https://www.klueber.com/de/de/produkte-service/schmierstoffe/",
+            "crawled_data_file": "klueber_urls.json"
+        },
+        {
+            "name": "Tecnamic",
+            "database_supplier_name": "",
+            "database_manufacturer_name": "",
+            "url": "https://www.tecnamic.com/produkte/",
+            "crawled_data_file": "tecnamic_urls.json"
+        }
     ]
 }

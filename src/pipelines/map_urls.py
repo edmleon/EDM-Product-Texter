@@ -74,6 +74,8 @@ def main():
     parser.add_argument("--max-depth", type=int, default=None, help="Depth-like knob (translated to a 'limit')")
     parser.add_argument("--sitemap", choices=["include", "only", "exclude"], default="include",
                         help="Whether to include sitemap links")
+    parser.add_argument("--out-filename", default=None,
+                        help="Optional output JSON file name (basename only, e.g. 'skf_urls.json')")
     args = parser.parse_args()
 
     client = FirecrawlClient()
@@ -81,12 +83,17 @@ def main():
     limit = max_depth_to_limit(args.max_depth)
     # NEW signature: map_site(seed_url, limit=..., sitemap=...)
     res = client.map_site(args.manufacturer_url, limit=limit, sitemap=args.sitemap)
-    print(f"DEBUG: API Response: {res}")  # Debug output
     urls = flatten_urls(res)
 
     ensure_dir(settings.out_dir)
-    mfg_slug = sanitize_for_filename(args.manufacturer_url)
-    out_path = f"{settings.out_dir}/{mfg_slug}_urls.json"
+
+    if args.out_filename:
+        # Use explicit filename from caller (joined with configured out_dir)
+        out_path = f"{settings.out_dir}/{args.out_filename}"
+    else:
+        # Default: sanitized manufacturer URL
+        mfg_slug = sanitize_for_filename(args.manufacturer_url)
+        out_path = f"{settings.out_dir}/{mfg_slug}_urls.json"
 
     write_json(out_path, {"manufacturer_url": args.manufacturer_url, "count": len(urls), "urls": urls})
     print(f"Wrote {len(urls)} URLs → {out_path}")
